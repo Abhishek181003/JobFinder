@@ -1,11 +1,26 @@
 import React from 'react';
-
+import Navbar from '../components/Navbar';
+import Sidebar from '../components/Sidebar';
+import AddJob from '../components/Addjob';
 const DashboardPage = () => {
     return (
-        <div className="flex flex-col items-center justify-center min-h-screen bg-green-50 text-gray-800">
-            <h1 className="text-5xl font-semibold mb-4">Welcome to Your Dashboard</h1>
-            <p className="text-xl text-center mb-6">Here you can manage your job listings and profile.</p>
-        </div>
+        <>
+            <div className="w-screen flex">
+                <div className="ml-20 w-[12%] flex items-center p-4">
+
+                    <img className="w-12 h-12 flex items-center justify-center" src="src/assets/Logo.png" alt="Job Board Logo" />
+
+                    <h2 className="text-teal-500 text-2xl font-semibold ml-2">Jobify</h2>
+                </div>
+                <div className="w-[78%]"><Navbar /></div>
+            </div>
+            <div className='flex w-screen'>
+                <Sidebar />
+                <div className='w-[80%] p-10'>
+                    <AddJob />
+                </div>
+            </div>
+        </>
     );
 };
 
