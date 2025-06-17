@@ -1,8 +1,8 @@
-import React from 'react';
 import Navbar from '../components/Navbar';
 import Sidebar from '../components/Sidebar';
-import AddJob from '../components/Addjob';
-const DashboardPage = () => {
+import Profile from '../components/Profile';
+
+function ProfilePage(){
     return (
         <>
             <div className="w-screen flex">
@@ -17,11 +17,10 @@ const DashboardPage = () => {
             <div className='flex w-screen'>
                 <Sidebar />
                 <div className='w-[80%] p-10'>
-                    <AddJob/>
+                    <Profile/>
                 </div>
             </div>
         </>
     );
 };
-
-export default DashboardPage;
+export default ProfilePage;

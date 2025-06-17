@@ -1,8 +1,8 @@
-import React from 'react';
 import Navbar from '../components/Navbar';
 import Sidebar from '../components/Sidebar';
 import AddJob from '../components/Addjob';
-const DashboardPage = () => {
+
+function AddJobPage(){
     return (
         <>
             <div className="w-screen flex">
@@ -24,4 +24,4 @@ const DashboardPage = () => {
     );
 };
 
-export default DashboardPage;
+export default AddJobPage;

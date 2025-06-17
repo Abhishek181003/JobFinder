@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaBriefcase, FaChartBar, FaUser, FaPlusSquare } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const Sidebar = () => {
     return (
@@ -8,22 +9,22 @@ const Sidebar = () => {
 
             {/* Navigation Links */}
             <nav className="flex flex-col gap-5 mt-6">
-                <a href="#" className="flex items-center  text-2xl p-2 text-gray-600 hover:text-teal-500">
+                <Link to={'/add-job'} className="flex items-center  text-2xl p-2 text-gray-600 hover:text-teal-500">
                     <FaPlusSquare className="mr-3" />
                     <span>Add Job</span>
-                </a>
-                <a href="#" className="flex items-center text-2xl  p-2 text-gray-600 hover:text-teal-600">
+                </Link>
+                <Link to={"/all-jobs"} className="flex items-center text-2xl  p-2 text-gray-600 hover:text-teal-600">
                     <FaBriefcase className="mr-3" />
                     <span>All Jobs</span>
-                </a>
-                <a href="#" className="flex items-center text-2xl p-2 text-gray-600 hover:text-teal-500">
+                </Link>
+                <Link to={"/stats"} className="flex items-center text-2xl p-2 text-gray-600 hover:text-teal-500">
                     <FaChartBar className="mr-3" />
                     <span>Stats</span>
-                </a>
-                <a href="#" className="flex items-center text-2xl p-2 text-gray-600 hover:text-teal-500">
+                </Link>
+                <Link to={"/profile"} className="flex items-center text-2xl p-2 text-gray-600 hover:text-teal-500">
                     <FaUser className="mr-3" />
                     <span>Profile</span>
-                </a>
+                </Link>
             </nav>
         </div>
     );
