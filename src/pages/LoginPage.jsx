@@ -1,18 +1,16 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';  // Importing useNavigate for programmatic routing
+import { useNavigate } from 'react-router-dom';
 
 const LoginPage = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [rememberMe, setRememberMe] = useState(false);
-    const navigate = useNavigate();  // Initialize navigate function to redirect after login
+    const navigate = useNavigate();
 
     // Handle form submission
     const handleLoginSubmit = (e) => {
         e.preventDefault();
-        // Simulate successful login
         console.log('Logging in with:', { email, password, rememberMe });
-        // After successful login, redirect to dashboard
         navigate('/dashboard');
     };
 
