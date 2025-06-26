@@ -1,6 +1,6 @@
 import Navbar from '../components/Navbar';
 import Sidebar from '../components/Sidebar';
-import AddJob from '../components/Addjob';
+import AddJob from '../components/AddJob';
 
 function AddJobPage(){
     return (
